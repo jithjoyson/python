@@ -1,0 +1,11 @@
+iInteger=int(input())
+for x in range(0,iInteger):
+    S=str(input())
+    sEven=""
+    sOdd=""
+    for y in range(0,len(S)):
+        if y%2==0:
+            sEven=sEven+S[y]
+        else:
+            sOdd=sOdd+S[y]
+    print(sEven,sOdd)
