@@ -1,0 +1,14 @@
+n=int(input())
+tel={}
+for x in range(0,n):
+    sString=input()
+    sname=sString.split()
+    tel[sname[0]]=sname[1]
+    
+for x in range(0,n):  
+    sString=input()
+    if(sString in tel):
+        print(sString,end="=")
+        print(tel[sString])
+    else:
+        print('Not found')
