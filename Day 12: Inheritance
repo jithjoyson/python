@@ -9,9 +9,7 @@ class Student(Person):
     #
     # Write your constructor here
     def __init__(self, firstName,lastName,idNumber,score):
-        self.firstName=firstName
-        self.lastName=lastName
-        self.idNumber=idNumber
+        super().__init__(firstName, lastName, idNumber)
         self.scores=score
     #   Function Name: calculate
     #   Return: A character denoting the grade.
@@ -31,4 +29,3 @@ class Student(Person):
             return 'E'
         else:
             return 'O'
-    
