@@ -3,5 +3,5 @@ import sys
 S = input().strip()
 try:
     print(int(S))
-except:
+except ValueError:
     print("Bad String")
